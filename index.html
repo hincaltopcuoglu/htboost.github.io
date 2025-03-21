@@ -1,152 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTBoost Collaborations</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-powered growth for creators, sellers, and digital brands." />
+  <title>HTBoost</title>
   <style>
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background-color: #111;
       color: #fff;
+      line-height: 1.6;
     }
     header {
+      background-color: #000;
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 2rem;
+    }
+    header img {
+      max-width: 280px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #ccc;
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 960px;
+      padding: 3rem 1rem;
+      max-width: 900px;
       margin: auto;
     }
-    h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-around;
     }
-    .influencer {
-      margin-bottom: 3rem;
+    .card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 220px;
+      text-align: center;
     }
-    .insta-link {
-      color: #e1306c;
+    .card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .card p {
+      color: #aaa;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+    }
+    input, textarea {
+      background: #222;
+      color: #fff;
+    }
+    button {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .success-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #fff;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
     }
-    .insta-link:hover {
-      text-decoration: underline;
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #666;
     }
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
+    .social {
       margin-top: 1rem;
     }
+    .social a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .social a:hover {
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .cards { flex-direction: column; }
+    }
+  </style>
+  <style>
+    /* Zoom on hover for success page images */
     .image-grid img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      cursor: pointer;
       transition: transform 0.3s ease;
     }
     .image-grid img:hover {
       transform: scale(1.05);
     }
-    /* Modal styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
-    .modal-content {
-      display: block;
-      margin: 5% auto;
-      max-width: 800px;
-      width: 90%;
-    }
-    .modal-content img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 35px;
-      color: #fff;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>HTBoost Collaborations</h1>
-    <p>Real campaigns. Real impact. Here are a few of our collaborations:</p>
+    <img src="logo.png" alt="HTBoost logo">
+    <p>AI-powered growth for creators, sellers, and digital brands.</p>
   </header>
 
   <section>
-    <h2>Atomy</h2>
-    <div class="influencer">
-      <p>Instagram: <a href="https://www.instagram.com/kirklareli_edirne_tekirdag/" target="_blank" class="insta-link">@kirklareli_edirne_tekirdag</a> & <a href="https://www.instagram.com/atomy_goksu/" target="_blank" class="insta-link">@atomy_goksu</a></p>
-      <p>This campaign expanded Atomy's regional presence with major engagement growth and local awareness through personalized storytelling.</p>
-      <div class="image-grid">
-        <img src="atomy1.jpg" alt="Atomy Campaign Image 1">
-        <img src="atomy2.jpg" alt="Atomy Campaign Image 2">
-        <img src="atomy3.jpg" alt="Atomy Campaign Image 3">
-        <img src="atomy4.jpg" alt="Atomy Campaign Image 4">
-        <img src="atomy5.jpg" alt="Atomy Campaign Image 5">
-        <img src="atomy6.jpg" alt="Atomy Campaign Image 6">
-        <img src="atomy7.jpg" alt="Atomy Campaign Image 7">
-        <img src="atomy8.jpg" alt="Atomy Campaign Image 8">
-        <img src="atomy9.jpg" alt="Atomy Campaign Image 9">
-        <img src="atomy10.jpg" alt="Atomy Campaign Image 10">
-        <img src="atomy11.jpg" alt="Atomy Campaign Image 11">
-        <img src="atomy12.jpg" alt="Atomy Campaign Image 12">
-        <img src="atomy13.jpg" alt="Atomy Campaign Image 13">
-        <img src="atomy14.jpg" alt="Atomy Campaign Image 14">
+    <h2>What We Do</h2>
+    <p>HTBoost helps influencers, content creators, internet sellers, and advertisers reach more potential customers using the combined power of data and AI. We automate, optimize, and personalize your reach across digital platforms.</p>
+  </section>
+
+  <section>
+    <h2>Who We Help</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🎥 Influencers</h3>
+        <p>Grow your audience, track engagement, and personalize content delivery.</p>
+      </div>
+      <div class="card">
+        <h3>📚 Content Creators</h3>
+        <p>Boost your content reach through AI-optimized distribution strategies.</p>
+      </div>
+      <div class="card">
+        <h3>🏦 Sellers</h3>
+        <p>Target the right buyers with data-backed recommendations.</p>
+      </div>
+      <div class="card">
+        <h3>📣 Advertisers</h3>
+        <p>Maximize ROI through real-time analytics and smart targeting.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Tupperware</h2>
-    <div class="influencer">
-      <p>Instagram: <a href="https://www.instagram.com/edirnetupperware/" target="_blank" class="insta-link">@edirnetupperware</a> & <a href="https://www.instagram.com/nesrinbenlitopcuoglu/" target="_blank" class="insta-link">@nesrinbenlitopcuoglu</a></p>
-      <p>Boosted visibility of new Tupperware product launches, resulting in high post engagement and regional sales momentum.</p>
-      <div class="image-grid">
-        <img src="tupperware1.jpg" alt="Tupperware Campaign Image 1">
-        <img src="tupperware2.jpg" alt="Tupperware Campaign Image 2">
-        <img src="tupperware3.jpg" alt="Tupperware Campaign Image 3">
-      </div>
-    </div>
+    <h2>How It Works</h2>
+    <p>We combine cutting-edge machine learning models with real-time data collection to identify high-value customer segments and deliver your message more effectively. Our platform learns and adapts as your audience grows.</p>
   </section>
 
-  <div id="modal" class="modal">
-    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
-    <div class="modal-content">
-      <img id="modal-image" src="" alt="Expanded view">
+  <section>
+    <h2>Success Stories</h2>
+    <p>Explore how we've helped influencers and digital sellers expand their reach and results through targeted, data-driven campaigns.</p>
+    <a href="success.html" class="success-link">View Collaborations</a>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/contact%40htboost.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://htboost.com/thank-you.html">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 HTBoost. All rights reserved. | contact@htboost.com
+    <div class="social">
+      <a href="https://www.instagram.com/htboost/" target="_blank">Instagram</a>
     </div>
-  </div>
-
-  <script>
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-image');
-    const images = document.querySelectorAll('.image-grid img');
-
-    images.forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'block';
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
-    });
-  </script>
+  </footer>
 </body>
 </html>
