@@ -28,12 +28,6 @@
     .influencer {
       margin-bottom: 3rem;
     }
-    .influencer img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-    }
     .insta-link {
       color: #e1306c;
       text-decoration: none;
@@ -46,6 +40,15 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
+    }
+    .image-grid img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .image-grid img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -88,17 +91,6 @@
         <img src="tupperware1.jpg" alt="Tupperware Campaign Image 1">
         <img src="tupperware2.jpg" alt="Tupperware Campaign Image 2">
         <img src="tupperware3.jpg" alt="Tupperware Campaign Image 3">
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>EducaX</h2>
-    <div class="influencer">
-      <p>Instagram: <a href="https://www.instagram.com/hncltpcgl/" target="_blank" class="insta-link">@hncltpcgl</a></p>
-      <p>EducaX used HTBoost to better reach parents and students with visually engaging education posts. Results included 2.5x engagement rates and increased brand trust.</p>
-      <div class="image-grid">
-        <img src="educax1.jpg" alt="EducaX Campaign Image 1">
       </div>
     </div>
   </section>
